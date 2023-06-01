@@ -1,0 +1,232 @@
+@import url(./normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans&family=Tourney:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+* {
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    margin: 15px auto 83px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.nav {
+    margin: auto 0;
+}
+
+.nav__span {
+    margin-right: 50px;
+    font-family: 'Tourney';
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+
+}
+
+.nav-list {
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+}
+
+.nav__item:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.main-nav {
+    margin-right: 50px;
+   
+}
+
+.main-info {
+    margin-top: 10px;
+}
+
+.main-info__background-img {
+    position: fixed;
+    background-image: url(../assets/img/bg-picture.jpg);
+    width: 760px;
+    height: 760px;
+    top: 140px;
+    right: 30px;
+    z-index: -1;
+
+}
+
+.main__item_upper {
+    position: relative;
+}
+
+.main__item_upper::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    background-color: black;
+    height: 8px;
+    top: -30px;
+}
+
+
+.main__item {
+    font-family: 'Francois One';
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+.main__item_underline {
+    border-bottom: 1px solid rgba(189, 189, 189, 1);
+}
+
+.main__item-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+.main__item_margins:not(:last-of-type) {
+    margin-bottom: 80px;
+}
+
+
+
+.main__overline {
+    font-family: 'Farro';
+    font-size: small;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    vertical-align: super;
+    text-transform: capitalize;
+}
+
+.main__overline_bold {
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main__text {
+    position: static;
+    z-index: 2;
+    font-family: 'PT Sans';
+    font-size: 28px;
+    line-height: 48px;
+    margin: 40px auto 70px;
+
+}
+
+.main__text_underline {
+    text-decoration: underline;
+}
+
+.main__text_italic {
+    font-style: italic;
+}
+
+.main__text-highlighted {
+    background-color: lightgrey;
+}
+
+.main__text:last-of-type {
+    margin-bottom: 90px;
+}
+
+/* Who is using page*/
+
+.cards {
+    margin: 90px auto;
+}
+
+.cards__header {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    margin-bottom: 60px;
+    margin-left: 120px;
+    position: relative;
+}
+
+.cards__header::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    background-color: black;
+    height: 8px;
+    top: 20px;
+    left: -117px;
+}
+
+.cards__img{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding: 20px auto;
+    margin-bottom: 30px;
+}
+
+
+
+.flip-card {
+    background-color: transparent;
+    height: 180px;
+    width: 270px;
+    border: 1px solid #f1f1f1;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+
+  
+  /* Style the back side */
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  
+
+
