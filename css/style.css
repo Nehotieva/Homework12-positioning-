@@ -179,11 +179,14 @@ body {
     left: -117px;
 }
 
-.cards__img{
-    border-bottom: 1px solid lightgray;
+.cards__img:first-of-type{
     border-top: 1px solid lightgray;
-    padding: 20px auto;
     margin-bottom: 30px;
+    padding-top: 30px;
+}
+.cards__img:last-of-type{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
 }
 
 
